@@ -1,6 +1,6 @@
 # DeepCrack: Learning Hierarchical Convolutional Features for Crack Detection
 
-We provide the codes, the datasets, and the pretrained model.
+the codes, the datasets, and the pretrained model.
 
 Zou Q, Zhang Z, Li Q, Qi X, Wang Q and Wang S, DeepCrack: Learning Hierarchical Convolutional Features for Crack Detection, IEEE Transactions on Image Processing, vol. 28, no. 3, pp. 1498-1512, 2019. [ [PDF] ](https://cse.sc.edu/~songwang/document/tip19a.pdf)
 
@@ -8,8 +8,7 @@ Zou Q, Zhang Z, Li Q, Qi X, Wang Q and Wang S, DeepCrack: Learning Hierarchical 
 
 # Network Architecture
 ![image](https://github.com/qinnzou/DeepCrack/blob/master/figures/network.png)
-# Some Results
-![image](https://github.com/qinnzou/DeepCrack/blob/master/figures/intro.png)
+
 
 # DeepCrack Datasets
 Four datasets are used by DeepCrack. CrackTree260 is used for training, and the other three are used for test.
@@ -72,18 +71,6 @@ You can also download the datasets from
 link：https://pan.baidu.com/s/1PWiBzoJlc8qC8ffZu2Vb8w   
 passcodes：zfoo
 
-## Results:
-Some results on our datasets:
-![image](https://github.com/qinnzou/deepcrack/blob/master/figures/deepcrack-compare1.png)
-![image](https://github.com/qinnzou/deepcrack/blob/master/figures/deepcrack-compare2.png)
-![image](https://github.com/qinnzou/deepcrack/blob/master/figures/deepcrack-compare3.png)
-
-# Set up
-## Requirements
-PyTorch 1.0.2 or above   
-Python 3.6    
-CUDA 10.0    
-We run on the Intel Core Xeon E5-2630@2.3GHz, 64GB RAM and two GeForce GTX TITAN-X GPUs.
 
 ## Pretrained Models
 Pretrained models on PyTorch are available at,   
