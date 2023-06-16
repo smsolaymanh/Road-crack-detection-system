@@ -7,12 +7,12 @@ import numpy as np
 import torch
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+os.environ["CUDA_VISIBLE_DEVICES"] = '2'
 
 
 def test(test_data_path='data/test_example.txt',
          save_path='deepcrack_results/',
-         pretrained_model='checkpoints/DeepCrack_CT260_FT1.pth', ):
+         pretrained_model='/home/x320/DeepCrack/codes/checkpoints/DeepCrack_CT260_FT1/checkpoints/DeepCrack_CT260_FT1_DeepCrack_CT260_FT1_epoch(23)_0000027_2023-06-16-05-59-19.pth', ):
     if not os.path.exists(save_path):
         os.mkdir(save_path)
 
