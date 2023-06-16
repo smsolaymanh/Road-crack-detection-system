@@ -10,8 +10,7 @@ import os
 import cv2
 import sys
 
-os.environ["CUDA_VISIBLE_DEVICES"] = cfg.gpu_id
-
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 def main():
     # ----------------------- dataset ----------------------- #
@@ -166,8 +165,8 @@ def main():
                                     val_acc['mask_acc'] / idx):
                                 cfg.save_pos_acc = (val_acc['mask_pos_acc'] / idx)
                                 cfg.save_acc = (val_acc['mask_acc'] / idx)
-                                trainer.saver.save(model, tag='%s_epoch(%d)_acc(%0.5f/%0.5f)' % (
-                                    cfg.name, epoch, cfg.save_pos_acc, cfg.save_acc))
+                                trainer.saver.save(model, tag='%s_epoch(%d)' % (
+                                    cfg.name, epoch))
                                 trainer.vis.log('Save Model %s_epoch(%d)_acc(%0.5f/%0.5f)' % (
                                     cfg.name, epoch, cfg.save_pos_acc, cfg.save_acc), 'train info')
 
