@@ -145,6 +145,7 @@ class DeepCrack(nn.Module):
         up2 = self.up2(up3, indices=indices_2, output_shape=unpool_shape2)
         up1 = self.up1(up2, indices=indices_1, output_shape=unpool_shape1)
 
+
         fuse5 = self.fuse5(down_inp=down5,up_inp=up5)
         fuse4 = self.fuse4(down_inp=down4, up_inp=up4)
         fuse3 = self.fuse3(down_inp=down3, up_inp=up3)
@@ -161,4 +162,7 @@ if __name__ == '__main__':
     model = DeepCrack()
 
     out = model(inp)
+
+    for i in out:
+        print(i.shape)
 
