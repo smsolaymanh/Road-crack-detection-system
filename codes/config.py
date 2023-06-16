@@ -5,13 +5,14 @@ import setproctitle
 class Config:
     name = 'DeepCrack_CT260_FT1'
 
-    gpu_id = '0,1,2,3'
+    gpu_id = '0'
 
     setproctitle.setproctitle("%s" % name)
 
     # path
     train_data_path = 'data/train_example.txt'
     val_data_path = 'data/test_example.txt'
+    test_data_path = 'data/test_example.txt'
     checkpoint_path = 'checkpoints'
     log_path = 'log'
     saver_path = os.path.join(checkpoint_path, name)
@@ -33,9 +34,9 @@ class Config:
     lr = 1e-3
     momentum = 0.9
     use_adam = True  # Use Adam optimizer
-    train_batch_size = 8
-    val_batch_size = 4
-    test_batch_size = 4
+    train_batch_size = 2
+    val_batch_size = 1
+    test_batch_size = 1
 
     acc_sigmoid_th = 0.5
     pos_pixel_weight = 1
